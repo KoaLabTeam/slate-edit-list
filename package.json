@@ -51,6 +51,7 @@
     "stringify": "^5.1.0"
   },
   "scripts": {
+    "updatebw": "rm -r ../../ui/src/libs/slate-edit-list; babel ./lib --out-dir ../../ui/src/libs/slate-edit-list",
     "build:dist": "rm -r ./dist; babel ./lib --out-dir ./dist",
     "build:flow": "flow-copy-source -v ./lib/ ./dist/",
     "prepublish": "npm run build:dist && npm run build:flow",
